@@ -382,11 +382,11 @@ if __name__ == "__main__":
                 Detected_Notes_list = []
                 Onsets_list = []
                 
-                file_count = len(os.listdir(path + ""))
+                file_count = len(os.listdir(path + "/Test_Audio_files"))
 
                 for file_number in range(1, file_count):
 
-                        file_name = path + "Audio_"+str(file_number)+".wav"
+                        file_name = path + "/Test_Audio_Files/Audio_"+str(file_number)+".wav"
                         audio_file = wave.open(file_name)
 
                         Instruments, Detected_Notes,Onsets = Instrument_identify(audio_file)
